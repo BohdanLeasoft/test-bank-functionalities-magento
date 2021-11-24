@@ -1,53 +1,53 @@
-# EMS O1.1.0l1.1.01.1.01.1.0 plug1.1.01.1.0 f1.1.01.1.0 Mag1.1.01.1.0t1.1.0 2
-By 1.1.01.1.0t1.1.0g1.1.0at1.1.01.1.0g y1.1.0u1.1.0 w1.1.0b1.1.01.1.01.1.0p w1.1.0t1.1.0 EMS O1.1.0l1.1.01.1.01.1.0 y1.1.0u ca1.1.0 acc1.1.0pt paym1.1.01.1.0t1.1.0 f1.1.01.1.0m y1.1.0u1.1.0 cu1.1.0t1.1.0m1.1.01.1.01.1.0 1.1.01.1.0 a1.1.0 1.1.0a1.1.0y a1.1.0d t1.1.0u1.1.0t1.1.0d ma1.1.01.1.01.1.01.1.0 w1.1.0t1.1.0 all 1.1.01.1.0l1.1.01.1.0a1.1.0t paym1.1.01.1.0t m1.1.0t1.1.01.1.0d1.1.0 1.1.0upp1.1.01.1.0t1.1.0d.
+# EMS Online plugin for Magento 2
+By integrating your webshop with EMS Online you can accept payments from your customers in an easy and trusted manner with all relevant payment methods supported.
 
-## V1.1.01.1.01.1.01.1.01.1.01.1.0 1.1.0umb1.1.01.1.0
+## Version number
 
-* Lat1.1.01.1.0t 1.1.01.1.01.1.01.1.01.1.01.1.01.1.0 '1.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.0'
+* Latest version '1.1.0'
 
-## M1.1.01.1.01.1.0mum 1.1.01.1.0qu1.1.01.1.01.1.0m1.1.01.1.0t1.1.0:
-- PHP 1.1.07.0
-- Mag1.1.01.1.0t1.1.0 1.1.02.2.x
+## Minimum requirements:
+- PHP v7.0
+- Magento v2.2.x
   
-## Supp1.1.01.1.0t1.1.0d m1.1.0t1.1.01.1.0d1.1.0 ##
-* Aft1.1.01.1.0pay
-* Am1.1.0x
-* Appl1.1.0 Pay
-* Ba1.1.0c1.1.01.1.0tact
-* Ba1.1.0kt1.1.0a1.1.01.1.0f1.1.01.1.0
-* C1.1.01.1.0d1.1.0tca1.1.0d
-* 1.1.0DEAL
-* Kla1.1.01.1.0a Pay Lat1.1.01.1.0
-* Kla1.1.01.1.0a D1.1.01.1.01.1.0ct
-* Payc1.1.01.1.01.1.0q
+## Supported methods ##
+* Afterpay
+* Amex
+* Apple Pay
+* Bancontact
+* Banktransfer
+* Creditcard
+* iDEAL
+* Klarna Pay Later
+* Klarna Direct
+* Payconiq
 * Paypal
-* T1.1.0kk1.1.01.1.0
+* Tikkie
 
-## I1.1.01.1.0tallat1.1.01.1.01.1.0 u1.1.01.1.01.1.0g C1.1.0mp1.1.01.1.01.1.01.1.0 ##
-Mag1.1.01.1.0t1.1.0® 2 u1.1.01.1.01.1.0 t1.1.01.1.0 C1.1.0mp1.1.01.1.01.1.01.1.0 t1.1.0 ma1.1.0ag1.1.0 t1.1.01.1.0 m1.1.0dul1.1.0 packag1.1.0 a1.1.0d t1.1.01.1.0 l1.1.0b1.1.0a1.1.0y. C1.1.0mp1.1.01.1.01.1.01.1.0 1.1.01.1.0 a d1.1.0p1.1.01.1.0d1.1.01.1.0cy ma1.1.0ag1.1.01.1.0 f1.1.01.1.0 PHP. C1.1.0mp1.1.01.1.01.1.01.1.0 d1.1.0cla1.1.01.1.01.1.0 t1.1.01.1.0 l1.1.0b1.1.0a1.1.01.1.01.1.01.1.0 y1.1.0u1.1.0 p1.1.01.1.0j1.1.0ct d1.1.0p1.1.01.1.0d1.1.0 1.1.01.1.0 a1.1.0d 1.1.0t w1.1.0ll ma1.1.0ag1.1.0 (1.1.01.1.01.1.0tall/updat1.1.0) t1.1.01.1.0m f1.1.01.1.0 y1.1.0u.
+## Installation using Composer ##
+Magento® 2 uses the Composer to manage the module package and the library. Composer is a dependency manager for PHP. Composer declares the libraries your project depends on and it will manage (install/update) them for you.
 
-C1.1.01.1.0ck 1.1.0f y1.1.0u1.1.0 1.1.01.1.01.1.01.1.01.1.01.1.0 1.1.0a1.1.0 c1.1.0mp1.1.01.1.01.1.01.1.0 1.1.01.1.01.1.0tall1.1.0d by 1.1.0u1.1.01.1.01.1.01.1.0g t1.1.01.1.0 f1.1.0ll1.1.0w1.1.01.1.0g c1.1.0mma1.1.0d:
+Check if your server has composer installed by running the following command:
 ```
-c1.1.0mp1.1.01.1.01.1.01.1.0 –1.1.0
+composer –v
 ``` 
-If y1.1.0u1.1.0 1.1.01.1.01.1.01.1.01.1.01.1.0 d1.1.01.1.01.1.01.1.0’t 1.1.0a1.1.01.1.0 c1.1.0mp1.1.01.1.01.1.01.1.0 1.1.01.1.01.1.0tall1.1.0d, y1.1.0u ca1.1.0 1.1.0a1.1.01.1.0ly 1.1.01.1.01.1.0tall 1.1.0t by u1.1.01.1.01.1.0g t1.1.01.1.01.1.0 ma1.1.0ual: 1.1.0ttp1.1.0://g1.1.0tc1.1.0mp1.1.01.1.01.1.01.1.0.1.1.01.1.0g/d1.1.0c/00-1.1.01.1.0t1.1.01.1.0.md
+If your server doesn’t have composer installed, you can easily install it by using this manual: https://getcomposer.org/doc/00-intro.md
 
-St1.1.0p-by-1.1.0t1.1.0p t1.1.0 1.1.01.1.01.1.0tall t1.1.01.1.0 Mag1.1.01.1.0t1.1.0® 2 1.1.0xt1.1.01.1.01.1.01.1.01.1.01.1.0 t1.1.01.1.01.1.0ug1.1.0 C1.1.0mp1.1.01.1.01.1.01.1.0:
+Step-by-step to install the Magento® 2 extension through Composer:
 
-1.	C1.1.01.1.01.1.01.1.0ct t1.1.0 y1.1.0u1.1.0 1.1.01.1.01.1.01.1.01.1.01.1.0 1.1.0u1.1.01.1.01.1.01.1.0g Mag1.1.01.1.0t1.1.0® 2 u1.1.01.1.01.1.0g SSH 1.1.01.1.0 a1.1.01.1.0t1.1.01.1.01.1.0 m1.1.0t1.1.01.1.0d (mak1.1.0 1.1.0u1.1.01.1.0 y1.1.0u 1.1.0a1.1.01.1.0 acc1.1.01.1.01.1.0 t1.1.0 t1.1.01.1.0 c1.1.0mma1.1.0d l1.1.01.1.01.1.0).
-2.	L1.1.0cat1.1.0 y1.1.0u1.1.0 Mag1.1.01.1.0t1.1.0® 2 p1.1.01.1.0j1.1.0ct 1.1.01.1.01.1.0t.
-3.	I1.1.01.1.0tall t1.1.01.1.0 Mag1.1.01.1.0t1.1.0® 2 1.1.0xt1.1.01.1.01.1.01.1.01.1.01.1.0 t1.1.01.1.01.1.0ug1.1.0 c1.1.0mp1.1.01.1.01.1.01.1.0 a1.1.0d wa1.1.0t t1.1.0ll 1.1.0t'1.1.0 c1.1.0mpl1.1.0t1.1.0d:
+1.	Connect to your server running Magento® 2 using SSH or another method (make sure you have access to the command line).
+2.	Locate your Magento® 2 project root.
+3.	Install the Magento® 2 extension through composer and wait till it's completed:
 ```
-c1.1.0mp1.1.01.1.01.1.01.1.0 1.1.01.1.0qu1.1.01.1.01.1.0 1.1.0m1.1.0pay/1.1.0m1.1.0-1.1.01.1.0l1.1.01.1.01.1.0-mag1.1.01.1.0t1.1.0-2
+composer require emspay/ems-online-magento-2
 ``` 
-4.	Aft1.1.01.1.0 t1.1.0at 1.1.0u1.1.0 t1.1.01.1.0 Mag1.1.01.1.0t1.1.0® upg1.1.0ad1.1.0 a1.1.0d cl1.1.0a1.1.0 t1.1.01.1.0 cac1.1.01.1.01.1.0:
+4.	After that run the Magento® upgrade and clean the caches:
 ```
-p1.1.0p b1.1.01.1.0/mag1.1.01.1.0t1.1.0 m1.1.0dul1.1.0:1.1.01.1.0abl1.1.0 EMSPay1.1.0Paym1.1.01.1.0t
-p1.1.0p b1.1.01.1.0/mag1.1.01.1.0t1.1.0 1.1.01.1.0tup:upg1.1.0ad1.1.0
+php bin/magento module:enable EMSPay_Payment
+php bin/magento setup:upgrade
 ```
-5.  If Mag1.1.01.1.0t1.1.0® 1.1.01.1.0 1.1.0u1.1.01.1.01.1.01.1.0g 1.1.01.1.0 p1.1.01.1.0duct1.1.01.1.01.1.0 m1.1.0d1.1.0 y1.1.0u al1.1.01.1.0 1.1.01.1.01.1.0d t1.1.0 1.1.01.1.0d1.1.0pl1.1.0y t1.1.01.1.0 1.1.0tat1.1.0c c1.1.01.1.0t1.1.01.1.0t:
+5.  If Magento® is running in production mode you also need to redeploy the static content:
 ```
-p1.1.0p b1.1.01.1.0/mag1.1.01.1.0t1.1.0 1.1.01.1.0tup:1.1.0tat1.1.0c-c1.1.01.1.0t1.1.01.1.0t:d1.1.0pl1.1.0y
+php bin/magento setup:static-content:deploy
 ```
-6.  Aft1.1.01.1.0 t1.1.01.1.0 1.1.01.1.01.1.0tallat1.1.01.1.01.1.0: G1.1.0 t1.1.0 y1.1.0u1.1.0 Mag1.1.01.1.0t1.1.0® adm1.1.01.1.0 p1.1.01.1.0tal a1.1.0d 1.1.0p1.1.01.1.0 ‘St1.1.01.1.01.1.01.1.0’ > ‘C1.1.01.1.0f1.1.0gu1.1.0at1.1.01.1.01.1.0’ > ‘Paym1.1.01.1.0t M1.1.0t1.1.01.1.0d1.1.0’ > ‘EMSPay’.
+6.  After the installation: Go to your Magento® admin portal and open ‘Stores’ > ‘Configuration’ > ‘Payment Methods’ > ‘EMSPay’.
    

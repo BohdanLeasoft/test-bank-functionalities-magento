@@ -1,42 +1,42 @@
-Mag1.1.01.1.0t1.1.0 2 '1.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.01.1.0'
+Magento 2 '1.1.0'
 ------------------------------   
 
-# C1.1.0a1.1.0g1.1.0l1.1.0g #
+# Changelog #
 
-## C1.1.0a1.1.0g1.1.01.1.0 1.1.01.1.0 1.1.01.1.01.1.01.1.01.1.01.1.01.1.0 1.0.0
-+ I1.1.01.1.0t1.1.0al 1.1.01.1.01.1.01.1.01.1.01.1.01.1.0
-## C1.1.0a1.1.0g1.1.01.1.0 1.1.01.1.0 1.1.01.1.01.1.01.1.01.1.01.1.01.1.0 1.0.1
-+ W1.1.0b1.1.01.1.01.1.0k payl1.1.0ad w1.1.0t1.1.0 u1.1.0k1.1.01.1.0w1.1.0 t1.1.0a1.1.01.1.0act1.1.01.1.01.1.0 1.1.0d w1.1.0ll 1.1.01.1.0t c1.1.01.1.0at1.1.0 1.1.01.1.01.1.01.1.01.1.0 l1.1.0g
-+ Exp1.1.01.1.01.1.0d 1.1.01.1.0d1.1.01.1.01.1.0 w1.1.0ll 1.1.01.1.0t t1.1.01.1.0gg1.1.01.1.0 1.1.01.1.0d1.1.01.1.0 1.1.0ma1.1.0l1.1.0
-+ Ca1.1.0c1.1.0llat1.1.01.1.01.1.0 m1.1.01.1.01.1.0ag1.1.0 1.1.01.1.0 ca1.1.0t 1.1.01.1.0 1.1.01.1.0w c1.1.01.1.01.1.01.1.0ctly t1.1.0a1.1.01.1.0lat1.1.0d
+## Changes in version 1.0.0
++ Initial version
+## Changes in version 1.0.1
++ Webhook payload with unknown transaction id will not create error log
++ Expired orders will not trigger order emails
++ Cancellation message in cart is now correctly translated
 
-## C1.1.0a1.1.0g1.1.01.1.0 1.1.01.1.0 1.1.01.1.01.1.01.1.01.1.01.1.01.1.0 1.0.2
-+ Add1.1.0d 1.1.01.1.01.1.01.1.01.1.0 m1.1.01.1.01.1.0ag1.1.0 t1.1.0 adm1.1.01.1.0 w1.1.01.1.01.1.0 1.1.01.1.0fu1.1.0d1.1.0 a1.1.01.1.0 1.1.01.1.0t p1.1.01.1.01.1.01.1.0bl1.1.0
-+ P1.1.0pulat1.1.0 m1.1.01.1.0c1.1.0a1.1.0t1.1.01.1.01.1.0d1.1.01.1.01.1.01.1.0d w1.1.0t1.1.0 I1.1.0c1.1.01.1.0m1.1.01.1.0tId 1.1.01.1.01.1.0t1.1.0ad 1.1.0f E1.1.0t1.1.0tyId
-+ Dat1.1.0 1.1.0f b1.1.01.1.0t1.1.0 a1.1.0d p1.1.01.1.0f1.1.0x a1.1.01.1.0 1.1.01.1.0w add1.1.0d t1.1.0 Kla1.1.01.1.0a 1.1.01.1.0qu1.1.01.1.0t
-+ Kla1.1.01.1.0a Pay Lat1.1.01.1.0 1.1.01.1.0d1.1.01.1.01.1.0ct1.1.01.1.01.1.0
+## Changes in version 1.0.2
++ Added error message to admin when refunds are not possible
++ Populate merchant_order_id with IncrementId instead of EntityId
++ Date of birth and prefix are now added to Klarna request
++ Klarna Pay Later redirection
 
-## C1.1.0a1.1.0g1.1.01.1.0 1.1.01.1.0 1.1.01.1.01.1.01.1.01.1.01.1.01.1.0 1.0.3
+## Changes in version 1.0.3
 
-* F1.1.0x1.1.01.1.0 c1.1.01.1.0ck1.1.0ut 1.1.0ucc1.1.01.1.01.1.0 1.1.01.1.01.1.0u1.1.0 w1.1.0t1.1.0 1.1.01.1.01.1.0 EMS m1.1.0t1.1.01.1.0d
-* Add1.1.0d 1.1.0xt1.1.0a c1.1.01.1.0ck a1.1.0d l1.1.0gg1.1.01.1.0 1.1.01.1.0 pa1.1.0d 1.1.01.1.01.1.01.1.01.1.0c1.1.0
-* Updat1.1.0d m1.1.01.1.01.1.0mum 1.1.01.1.0qu1.1.01.1.01.1.0m1.1.01.1.0t1.1.0 t1.1.0 Mag1.1.01.1.0t1.1.0 2.2.x & PHP 7.x
+* Fixes checkout success issue with non EMS method
+* Added extra check and loggin on paid invoice
+* Updated minimum requirements to Magento 2.2.x & PHP 7.x
 
-## C1.1.0a1.1.0g1.1.01.1.0 1.1.01.1.0 1.1.01.1.01.1.01.1.01.1.01.1.01.1.0 1.0.4
+## Changes in version 1.0.4
 
-* Add1.1.0d 1.1.0DEAL 1.1.01.1.01.1.0u1.1.01.1.0 1.1.0al1.1.0dat1.1.01.1.01.1.0
+* Added iDEAL issuer validation
 
-## C1.1.0a1.1.0g1.1.01.1.0 1.1.01.1.0 1.1.01.1.01.1.01.1.01.1.01.1.01.1.0 1.0.5
+## Changes in version 1.0.5
 
-* 1.1.0DEAL 1.1.01.1.01.1.0u1.1.01.1.0 d1.1.0fault 1.1.0alu1.1.0 t1.1.0a1.1.01.1.0lat1.1.01.1.01.1.0
+* iDEAL issuer default value translation
 
-## C1.1.0a1.1.0g1.1.01.1.0 1.1.01.1.0 1.1.01.1.01.1.01.1.01.1.01.1.01.1.0 1.1.0
+## Changes in version 1.1.0
 
-* R1.1.0fact1.1.01.1.01.1.0d c1.1.0d1.1.0 t1.1.0 1.1.0a1.1.0dl1.1.0 GPE 1.1.01.1.0lut1.1.01.1.01.1.0.
-* U1.1.01.1.0f1.1.01.1.0d ba1.1.0k lab1.1.0l1.1.0 t1.1.0 1.1.0a1.1.0dl1.1.0 GPE 1.1.01.1.0lut1.1.01.1.01.1.0.
-* Add1.1.0d t1.1.01.1.0 G1.1.01.1.0gl1.1.0-pay, S1.1.0f1.1.01.1.0t, Kla1.1.01.1.0a DD paym1.1.01.1.0t m1.1.0t1.1.01.1.0d1.1.0
-* Add1.1.0d Mult1.1.0-Cu1.1.01.1.01.1.01.1.0cy 1.1.01.1.0lut1.1.01.1.01.1.0
-* Add1.1.0d fu1.1.0ct1.1.01.1.01.1.0 w1.1.01.1.0c1.1.0 adapt1.1.01.1.01.1.0ly 1.1.01.1.0tu1.1.01.1.01.1.0 a m1.1.01.1.01.1.0ag1.1.0 u1.1.01.1.01.1.0g 'cu1.1.0t1.1.0m1.1.01.1.01.1.0m1.1.01.1.01.1.0ag1.1.0'.
-* Add1.1.0d t1.1.01.1.0t w1.1.01.1.0c1.1.0 c1.1.01.1.0ck 1.1.01.1.0 p1.1.01.1.0j1.1.0ct 1.1.0t1.1.0uctu1.1.01.1.0 c1.1.01.1.01.1.01.1.0ct u1.1.01.1.01.1.0g PHPU1.1.01.1.0t 1.1.0xt1.1.01.1.01.1.01.1.01.1.01.1.0 t1.1.0 c1.1.01.1.0ck GPE 1.1.01.1.0lut1.1.01.1.01.1.0 1.1.01.1.0 1.1.0t1.1.0p G1.1.0tHub act1.1.01.1.01.1.01.1.0.
-* Add1.1.0d t1.1.01.1.0t w1.1.01.1.0c1.1.0 c1.1.01.1.0ck 1.1.01.1.0d1.1.01.1.0 c1.1.01.1.0at1.1.01.1.0g u1.1.01.1.01.1.0g PHPU1.1.01.1.0t 1.1.0xt1.1.01.1.01.1.01.1.01.1.01.1.0 t1.1.0 c1.1.01.1.0ck t1.1.0at lat1.1.01.1.0t c1.1.0a1.1.0g1.1.01.1.0 d1.1.01.1.01.1.01.1.0't c1.1.0a1.1.01.1.0 t1.1.01.1.0 ma1.1.01.1.0 fu1.1.0ct1.1.01.1.01.1.0al1.1.0ty.
+* Refactored code to handle GPE solution.
+* Unified bank labels to handle GPE solution.
+* Added the Google-pay, Sofort, Klarna DD payment methods
+* Added Multi-Currency solution
+* Added function which adaptively returns a message using 'customer_message'.
+* Added test which check is project structure correct using PHPUnit extension to check GPE solution on step GitHub actions.
+* Added test which check order creating using PHPUnit extension to check that latest changes doesn't crash the main functionality.
 
