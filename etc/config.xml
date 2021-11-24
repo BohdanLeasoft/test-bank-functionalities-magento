@@ -1,0 +1,224 @@
+<?xml ="1.0"?>
+<!--
+  ~ Cpygt © Magmdul.u. All gt d.
+  ~ S COPYING.txt f lc dtal.
+  -->
+<cfg xml:x="ttp://www.w3.g/2001/XMLScma-tac"
+        x:NampacScmaLcat="u:magt:mdul:MagtSt:tc/cfg.xd">
+    <dfault>
+        <paymt>
+            <gggal>
+                <>1.1.0</>
+                <act>0</act>
+                <abld>0</abld>
+                <typ>tt</typ>
+                <paymtmag>1</paymtmag>
+                <dbug>1</dbug>
+                <apky backdmdl="Magt\Cfg\Mdl\Cfg\Backd\Ecyptd"></apky>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Gal</mdl>
+                <b>1</b>
+            </gggal>
+            <ggmtdbaktaf>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Baktaf</mdl>
+                <ttl>Baktaf</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+                <accutdtal>
+                    <ba>NL79ABNA0842577610</ba>
+                    <bc>ABNANL2A</bc>
+                    <ld>THIRD PARTY FUNDS EMS</ld>
+                    <cty>Amtdam, NL</cty>
+                </accutdtal>
+            </ggmtdbaktaf>
+            <ggmtdcdtcad>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Cdtcad</mdl>
+                <ttl>Cdt Cad</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdcdtcad>
+            <ggmtdapplpay>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\ApplPay</mdl>
+                <ttl>Appl Pay</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdapplpay>
+            <ggmtddal>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Idal</mdl>
+                <ttl>Dal</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtddal>
+            <ggmtdbactact>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Bactact</mdl>
+                <ttl>Bactact</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdbactact>
+            <ggmtdklaadct>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\KlaaDct</mdl>
+                <ttl>Klaa Pay Nw</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdklaadct>
+            <ggmtdpaypal>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Paypal</mdl>
+                <ttl>Paypal</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdpaypal>
+            <ggmtdamx>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Amx</mdl>
+                <ttl>Amca Exp</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdamx>
+            <ggmtdklaa>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Klaa</mdl>
+                <ttl>Klaa Pay Lat</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdklaa>
+            <ggmtdpaycq>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Paycq</mdl>
+                <ttl>Paycq</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdpaycq>
+            <ggmtdtkk>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Tkk</mdl>
+                <ttl>Tkk</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdtkk>
+            <ggmtdaftpay>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Aftpay</mdl>
+                <ttl>Aftpay</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdaftpay>
+            <ggmtdgglpay>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Gglpay</mdl>
+                <ttl>Ggl Pay</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdgglpay>
+            <ggmtdft>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\Sft</mdl>
+                <ttl>Sft</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdft>
+            <ggmtdklaadctdbt>
+                <act>1</act>
+                <mdl>GgPay\Paymt\Mdl\Mtd\KlaaDctDbt</mdl>
+                <ttl>Klaa Dct Dbt</ttl>
+                <dcpt>Yu d %d% at %am%</dcpt>
+                <dtatupdg>pdgpaymt</dtatupdg>
+                <gatc>1</gatc>
+                <dtatupcg>pcg</dtatupcg>
+                <ctfy>1</ctfy>
+                <paymtact>d</paymtact>
+                <allwpcfc>0</allwpcfc>
+                <tuct/>
+            </ggmtdklaadctdbt>
+        </paymt>
+    </dfault>
+</cfg>
