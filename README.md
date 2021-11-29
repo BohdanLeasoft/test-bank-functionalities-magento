@@ -2,7 +2,8 @@
 By integrating your webshop with EMS Online you can accept payments from your customers in an easy and trusted manner with all relevant payment methods supported.
 
 ## Version number
-* Latest version 'version_here'
+
+* Latest version VERSION_HERE
 
 ## Minimum requirements:
 - PHP v7.0
