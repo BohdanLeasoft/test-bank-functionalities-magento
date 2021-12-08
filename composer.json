@@ -1,5 +1,5 @@
 {
-    "name": "bohdanleasoft/magentogpe",
+    "name": "gingerpay/payment",
     "description": "Ginger Pay for Magento 2",
     "version": "1.1.0",
     "require": {      
