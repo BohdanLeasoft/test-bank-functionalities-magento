@@ -38,8 +38,18 @@ define(
         ];
         $.each(methods, function (k, method) {
             var paymentMethod = window.checkoutConfig.payment[method['type']];
-            if (paymentMethod.isActive) {
-                rendererList.push(method);
+            if (method.type != 'ginger_methods_applepay')
+            {
+                if (paymentMethod.isActive) {
+                    rendererList.push(method);
+                }
+            }
+            else
+            {
+                if (window.ApplePaySession && paymentMethod.isActive)
+                {
+                    rendererList.push(method);
+                }
             }
         });
         return Component.extend({});
