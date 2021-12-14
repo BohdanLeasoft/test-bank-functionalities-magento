@@ -159,9 +159,7 @@ class ControllerCheckoutActionBuilder extends Action
     public function webhook()
     {
         try {
-            $input = $this->json->unserialize(
-                $this->filesystemDriver->fileGetContents("php://input")
-            );
+            $input = json_decode( file_get_contents( "php://input" ), true );
             $this->configRepository->addTolog('webhook', $input);
         } catch (\Exception $e) {
             $input = null;
