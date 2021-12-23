@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © Magmodules.eu. All rights reserved.
+ * All rights reserved.
  * See COPYING.txt for license details.
  */
 declare(strict_types=1);
@@ -14,11 +14,11 @@ use Magento\Framework\Exception\LocalizedException;
 /**
  * KlarnaDirect method class
  */
-class KlarnaDirect extends PaymentLibraryRedefiner
+class KlarnaPayNow extends PaymentLibraryRedefiner
 {
 
     /** Payment Code */
-    const METHOD_CODE = 'ginger_methods_klarnadirect';
+    const METHOD_CODE = 'ginger_methods_klarnapaynow';
 
     /**
      * @var string

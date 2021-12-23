@@ -1,5 +1,5 @@
 /*
- * Copyright © Magmodules.eu. All rights reserved.
+ * All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -16,7 +16,7 @@ define(
         return Component.extend(
             {
                 defaults: {
-                    template: 'GingerPay_Payment/payment/klarna',
+                    template: 'GingerPay_Payment/payment/klarnapaylater',
                     selectedPrefix: null
                 },
                 getCustomerPrefixes: function () {
@@ -30,7 +30,7 @@ define(
                     return ko.observable(new Date(dob));
                 },
                 validate: function () {
-                    var form = $('#ginger_methods_klarna-form');
+                    var form = $('#ginger_methods_klarnapaylater-form');
                     return form.validation() && form.validation('isValid');
                 },
                 getData: function () {

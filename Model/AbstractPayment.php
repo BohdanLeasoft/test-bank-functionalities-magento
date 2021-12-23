@@ -4,7 +4,7 @@ namespace GingerPay\Payment\Model;
 
 use GingerPay\Payment\Model\PaymentLibrary;
 use GingerPay\Payment\Model\Methods\Afterpay;
-use GingerPay\Payment\Model\Methods\Klarna;
+use GingerPay\Payment\Model\Methods\KlarnaPayLater;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Payment\Model\InfoInterface;
@@ -52,13 +52,12 @@ class AbstractPayment extends PaymentLibrary
      */
     public function isAvailable(CartInterface $quote = null): bool
     {
-        if ($this->method_code == Afterpay::METHOD_CODE || $this->method_code == Klarna::METHOD_CODE)
+        if (in_array($this->method_code, [Afterpay::METHOD_CODE, KlarnaPayLater::METHOD_CODE]))
         {
             if ($quote == null)
             {
                 $quote = $this->checkoutSession->getQuote();
             }
-
             if (!$this->configRepository->isAfterpayOrKlarnaAllowed($this->method_code, (int)$quote->getStoreId()))
             {
                 return false;
@@ -74,14 +73,14 @@ class AbstractPayment extends PaymentLibrary
      * @return $this->testApiKey
      */
 
-    private function getTestApiKey($method, $testModus)
+    private function getTestApiKey($method, $testModus, $storeId)
     {
         switch ($method)
         {
             case Afterpay::METHOD_CODE:
                 return $testModus ? $this->configRepository->getAfterpayTestApiKey($storeId, true) : null;
                 break;
-            case Klarna::METHOD_CODE:
+            case KlarnaPayLater::METHOD_CODE:
                 return $this->configRepository->getKlarnaTestApiKey($storeId, true) ;
                 break;
         }
@@ -103,7 +102,7 @@ class AbstractPayment extends PaymentLibrary
             case Afterpay::METHOD_CODE:
                 $this->paymentName = 'Afterpay';
                 break;
-            case Klarna::METHOD_CODE:
+            case KlarnaPayLater::METHOD_CODE:
                 $this->paymentName = 'Klarna';
                 break;
         }
@@ -120,7 +119,7 @@ class AbstractPayment extends PaymentLibrary
             case Afterpay::METHOD_CODE:
                 $testApiKey = $testModus ? $this->configRepository->getAfterpayTestApiKey($storeId, true) : null;
                 break;
-            case Klarna::METHOD_CODE:
+            case KlarnaPayLater::METHOD_CODE:
                 $testApiKey = $this->configRepository->getKlarnaTestApiKey($storeId, true) ;
                 break;
         }
@@ -128,10 +127,10 @@ class AbstractPayment extends PaymentLibrary
         $client = $this->loadGingerClient($storeId, $testApiKey);
 
         try {
-            $ingOrder = $client->getOrder($order->getGingerpayTransactionId());
+            $gingerOrder = $client->getOrder($order->getGingerpayTransactionId());
 
-            $orderId = $ingOrder['id'];
-            $transactionId = current($ingOrder['transactions'])['id'];
+            $orderId = $gingerOrder['id'];
+            $transactionId = current($gingerOrder['transactions'])['id'];
             $client->captureOrderTransaction($orderId, $transactionId);
             $this->configRepository->addTolog(
                 'success',
@@ -176,21 +175,25 @@ class AbstractPayment extends PaymentLibrary
         if (array_key_exists('test_modus', $testModus)) {
             $testModus = $testModus['test_modus'];
         }
-        $testApiKey = $this->getTestApiKey($method);
+
+        $testApiKey = $this->getTestApiKey($method, $testModus, $storeId);
         $transactionId = $order->getGingerpayTransactionId();
 
         try {
             $addShipping = $creditmemo->getShippingAmount() > 0 ? 1 : 0;
             $client = $this->loadGingerClient($storeId, $testApiKey);
-            $client->refundOrder(
+
+            $gingerOrder = $client->refundOrder(
                 $transactionId,
                 [
+                    'amount' => $this->configRepository->getAmountInCents((float)$amount),
+                    'currency' => $order->getOrderCurrencyCode(),
                     'order_lines' => $this->orderLines->getRefundLines($creditmemo, $addShipping)
-                ]
-            );
+                ]);
         } catch (\Exception $e) {
-            $this->configRepository->addTolog('error', $e->getMessage());
-            throw new LocalizedException(__('Error: not possible to create an online refund: %1', $e->getMessage()));
+            $errorMsg = __('Error: not possible to create an online refund: %1', $e->getMessage());
+            $this->configRepository->addTolog('error', $errorMsg);
+            throw new LocalizedException($errorMsg);
         }
 
         return $this;

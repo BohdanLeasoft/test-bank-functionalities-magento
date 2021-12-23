@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  ~ Copyright © Magmodules.eu. All rights reserved.
+  ~ All rights reserved.
   ~ See COPYING.txt for license details.
   -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
@@ -41,13 +41,13 @@
                                                                         <item name="ginger_methods_ideal" xsi:type="array">
                                                                             <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
                                                                         </item>
-                                                                        <item name="ginger_methods_klarnadirect" xsi:type="array">
+                                                                        <item name="ginger_methods_klarnapaynow" xsi:type="array">
                                                                             <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
                                                                         </item>
                                                                         <item name="ginger_methods_paypal" xsi:type="array">
                                                                             <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
                                                                         </item>
-                                                                        <item name="ginger_methods_klarna" xsi:type="array">
+                                                                        <item name="ginger_methods_klarnapaylater" xsi:type="array">
                                                                             <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
                                                                         </item>
                                                                         <item name="ginger_methods_payconiq" xsi:type="array">

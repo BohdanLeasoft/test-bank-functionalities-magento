@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © Magmodules.eu. All rights reserved.
+ * All rights reserved.
  * See COPYING.txt for license details.
  */
 declare(strict_types=1);
@@ -20,11 +20,11 @@ use Magento\Sales\Model\Order\Creditmemo;
 /**
  * Klarna method class
  */
-class Klarna extends PaymentLibraryRedefiner
+class KlarnaPayLater extends PaymentLibraryRedefiner
 {
 
     /** Payment Code */
-    const METHOD_CODE = 'ginger_methods_klarna';
+    const METHOD_CODE = 'ginger_methods_klarnapaylater';
 
     /**
      * @var string
@@ -37,7 +37,7 @@ class Klarna extends PaymentLibraryRedefiner
     /**
      * @var string
      */
-    protected $_infoBlockType = \GingerPay\Payment\Block\Info\Klarna::class;
+    protected $_infoBlockType = \GingerPay\Payment\Block\Info\KlarnaPayLater::class;
 
     /**
      * @var string

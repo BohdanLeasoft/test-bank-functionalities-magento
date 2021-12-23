@@ -4,7 +4,6 @@ namespace GingerPay\Payment\Model\Builders;
 
 use GingerPay\Payment\Api\Config\RepositoryInterface as ConfigRepository;
 use GingerPay\Payment\Model\PaymentLibrary as PaymentLibraryModel;
-use GingerPay\Payment\Model\PaymentLibrary as PaymentLibraryModer;
 use Magento\Checkout\Model\Session;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -14,6 +13,7 @@ use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\Filesystem\Driver\File as FilesystemDriver;
 use Magento\Framework\Serialize\Serializer\Json;
 use Magento\Payment\Helper\Data as PaymentHelper;
+use Magento\Framework\Webapi\Rest\Request;
 
 class ControllerCheckoutActionBuilder extends Action
 {
@@ -81,18 +81,12 @@ class ControllerCheckoutActionBuilder extends Action
                 $this->checkoutSession->start();
                 return $this->_redirect('checkout/onepage/success?utm_nooverride=1');
             }
-            else
-            {
-                $this->checkoutSession->restoreQuote();
-                if (!empty($status['cart_msg']))
-                {
-                    $this->messageManager->addNoticeMessage($status['cart_msg']);
-                }
-                else
-                {
-                    $this->messageManager->addNoticeMessage(__('Something went wrong.'));
-                }
-            }
+
+            $this->checkoutSession->restoreQuote();
+
+            $message = $status['cart_msg'] ?? __('Something went wrong.');
+            $this->messageManager->addNoticeMessage($message);
+
         }
         catch (\Exception $e)
         {
@@ -113,9 +107,7 @@ class ControllerCheckoutActionBuilder extends Action
         $order = $this->checkoutSession->getLastRealOrder();
 
         try {
-
             $method = $order->getPayment()->getMethod();
-
             $methodInstance = $this->paymentHelper->getMethodInstance($method);
         } catch (\Exception $e) {
             $this->messageManager->addErrorMessage('Unknown Error');
@@ -136,7 +128,7 @@ class ControllerCheckoutActionBuilder extends Action
                 return $this->_redirect('checkout/cart');
             }
 
-            if (!empty($result['error'])) {
+            if (isset($result['error'])) {
                 $this->messageManager->addErrorMessage($result['error']);
                 $this->configRepository->addTolog('error', $result['error']);
                 $this->checkoutSession->restoreQuote();
@@ -159,7 +151,7 @@ class ControllerCheckoutActionBuilder extends Action
     public function webhook()
     {
         try {
-            $input = json_decode( file_get_contents( "php://input" ), true );
+            $input =  json_decode(file_get_contents("php://input"), true);
             $this->configRepository->addTolog('webhook', $input);
         } catch (\Exception $e) {
             $input = null;
@@ -171,7 +163,6 @@ class ControllerCheckoutActionBuilder extends Action
             $result->setHttpResponseCode(503);
             return $result;
         }
-
         if (isset($input['order_id'])) {
             try {
                 $this->paymentLibraryModel->processTransaction($input['order_id'], 'webhook');
