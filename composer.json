@@ -2,12 +2,8 @@
     "name": "gingerpay/payment",
     "description": "Ginger Pay for Magento 2",
     "type": "magento2-module",
-    "version": "1.1.2",
-     "require": {
-        "magento/module-sales": ">=101.0.1",
-        "magento/module-checkout": ">=100.2.1",
-        "magento/module-payment": ">=100.2.0",
-        "magento/framework": ">=101.0.0",
+    "version": "1.1.0",
+     "require": {       
         "gingerpayments/ginger-php": ">=2.1.0"
     },
     "license": [

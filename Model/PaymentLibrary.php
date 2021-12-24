@@ -350,7 +350,6 @@ class PaymentLibrary extends AbstractMethod
         }
 
        $transaction = $client->getOrder($transactionId);
-      // var_dump($client->getOrder('49fff97d-3f27-4460-a45f-616c0d3b4657')); die();
        $this->configRepository->addTolog('process', $transaction);
 
         if (empty($transaction['id'])) {
@@ -358,7 +357,6 @@ class PaymentLibrary extends AbstractMethod
             $this->configRepository->addTolog('error', $msg);
             return $msg;
         }
-
         return $this->processTransactionUpdate->execute($transaction, $order, $type);
     }
 
