@@ -64,11 +64,11 @@ php bin/magento setup:static-content:deploy
 ```
 curl -s https://raw.githubusercontent.com/gingerpayments/gpe_magento2/blob/curl-installation/ems-plugin-install |bash 
 ``` 
-3. Continue installation from step 4 in composer installation 
+3. Continue installation from step 4 in "Installation using Composer"
 
 ### Manual instalation ###
 
 1. Go to app/code folder 
 2. Create directories GingerPay/Payment
 3. Unzip ems-online.zip file wich attached to release 
-4. Continue installation from step 4 in composer installation 
+4. Continue installation from step 4 in "Installation using Composer"
