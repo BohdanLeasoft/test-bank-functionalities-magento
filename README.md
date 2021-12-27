@@ -5,9 +5,9 @@ By integrating your webshop with EMS Online you can accept payments from your cu
 
 * Latest version VERSION_HERE
 
-## Minimum requirements:
-- PHP v7.0
-- Magento v2.2.x
+## Requirements:
+- PHP v7.0 to v7.4
+- Magento v2.2.x to v2.4.3
   
 ## Supported methods ##
 * Afterpay
@@ -18,7 +18,10 @@ By integrating your webshop with EMS Online you can accept payments from your cu
 * Creditcard
 * iDEAL
 * Klarna Pay Later
-* Klarna Direct
+* Klarna Pay Now
+* Klarna Direkt Debit
+* Google-pay
+* Sofort
 * Payconiq
 * Paypal
 * Tikkie
@@ -50,4 +53,22 @@ php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy
 ```
 6.  After the installation: Go to your Magento® admin portal and open ‘Stores’ > ‘Configuration’ > ‘Payment Methods’ > ‘EMSPay’.
-   
+
+
+## Additional ways to install ##
+
+# Installation by curl #
+
+1. Go to app/code folder 
+2. Run command:
+```
+curl -s https://raw.githubusercontent.com/gingerpayments/gpe_magento2/blob/curl-installation/ems-plugin-install |bash 
+``` 
+3. Continue installation from step 4 in composer installation 
+
+# Manual instalation #
+
+1. Go to app/code folder 
+2. Create directories GingerPay/Payment
+3. Unzip ems-online.zip file wich attached to release 
+4. Continue installation from step 4 in composer installation 
