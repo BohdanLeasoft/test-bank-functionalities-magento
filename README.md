@@ -57,7 +57,7 @@ php bin/magento setup:static-content:deploy
 
 ## Additional ways to install ##
 
-# Installation by curl #
+### Installation by curl ###
 
 1. Go to app/code folder 
 2. Run command:
@@ -66,7 +66,7 @@ curl -s https://raw.githubusercontent.com/gingerpayments/gpe_magento2/blob/curl-
 ``` 
 3. Continue installation from step 4 in composer installation 
 
-# Manual instalation #
+### Manual instalation ###
 
 1. Go to app/code folder 
 2. Create directories GingerPay/Payment
