@@ -45,7 +45,7 @@ composer require emspay/ems-online-magento-2
 ``` 
 4.	After that run the Magento® upgrade and clean the caches:
 ```
-php bin/magento module:enable EMSPay_Payment
+php bin/magento module:enable GingerPay_Payment
 php bin/magento setup:upgrade
 ```
 5.  If Magento® is running in production mode you also need to redeploy the static content:
