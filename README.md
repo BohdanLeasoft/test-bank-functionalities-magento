@@ -5,7 +5,7 @@ By integrating your webshop with EMS Online you can accept payments from your cu
  
 * Latest version 1.1.0
  
-## Requirements:
+## Requirements:       
 - PHP v7.0 to v7.4
 - Magento v2.2.x to v2.4.3
                               
