@@ -69,6 +69,5 @@ curl -s https://raw.githubusercontent.com/gingerpayments/gpe_magento2/blob/curl-
 ### Manual instalation ###
 
 1. Go to app/code folder 
-2. Create directories GingerPay/Payment
-3. Unzip ems-online.zip file wich attached to release 
-4. Continue installation from step 4 in "Installation using Composer"
+2. Unzip ems-online.zip file wich attached to release 
+3. Continue installation from step 4 in "Installation using Composer"
