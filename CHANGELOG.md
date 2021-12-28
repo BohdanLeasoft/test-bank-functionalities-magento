@@ -12,7 +12,7 @@ Magento 2 1.1.0
 
 ## Changes in version 1.0.2
 + Added error message to admin when refunds are not possible
-+ Populate merchant_order_id with IncrementId instead of EntityId
++ Populate merchant_order_id with IncrementId instead of EntityId 
 + Date of birth and prefix are now added to Klarna request
 + Klarna Pay Later redirection
 
