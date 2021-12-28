@@ -1,4 +1,4 @@
-# EMS Online plugin for Magento 2
+# EMS Online plugin for Magento 2 
 By integrating your webshop with EMS Online you can accept payments from your customers in an easy and trusted manner with all relevant payment methods supported.
 
 ## Version number
