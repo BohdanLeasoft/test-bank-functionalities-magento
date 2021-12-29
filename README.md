@@ -13,14 +13,20 @@ Via the EMS website you can create a free test account online 24/7 and try out t
 payment solution. EMS's online solution also offers the option of sending payment links and 
 accepting QR payments.
 
-The ideal online payment page for your webshop:
-- Free test account - available online 24/7
-- Wide range of payment methods
-- Easy integration via a plug-in or API
-- Free shopping cart plug-ins
-- Payment page in the look & feel of your webshop
-- Reports in the formats CAMT.053, MT940S, MT940 & CODA
-- One clear dashboard for all your payment, turnover data and administration functions
+The ideal online payment page for your webshop: 
+
+·         Free test account - apply online 24/7 
+
+·         Wide range of payment methods 
+
+·         Payment page entirely in the style of your website, making transactions less likely to be terminated. 
+
+·         Download your reports in the formats CAMT.053, MT940, MT940S & COD 
+
+·         One clear dashboard for all your payment, revenue and administrative functions 
+
+·         Available in 4 languages: English, French, Dutch, and German. More languages will be added. 
+
 
 ## Version number                 
  
