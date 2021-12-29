@@ -30,7 +30,7 @@ The ideal online payment page for your webshop:
 
 ## Version number                 
  
-* Latest version 1.1.0
+* Latest version 2.0.0
  
 ## Requirements:       
 - PHP v7.0 to v7.4
@@ -72,8 +72,12 @@ composer require emspay/ems-online-magento-2
 ``` 
 4.	After that run the Magento® upgrade and clean the caches:
 ```
-php bin/magento module:enable GingerPay_Payment
 php bin/magento setup:upgrade
+php bin/magento module:enable GingerPay_Payment
+```
+If you install version 1.0.5 and older run:
+```
+php bin/magento module:enable EMSPay_Payment
 ```
 5.  If Magento® is running in production mode you also need to redeploy the static content:
 ```
@@ -89,3 +93,6 @@ php bin/magento setup:static-content:deploy
 1. Go to app/code folder 
 2. Unzip ems-online.zip file wich attached to [release](https://github.com/emspay/ems-online-magento-2/releases) 
 3. Continue installation from step 4 in "Installation using Composer"
+
+
+
