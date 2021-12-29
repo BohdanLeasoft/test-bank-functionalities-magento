@@ -1,6 +1,33 @@
 # EMS Online plugin for Magento 2
-By integrating your webshop with EMS Online you can accept payments from your customers in an easy and trusted manner with all relevant payment methods supported.
-      
+
+## About
+This is the offical EMS Online plugin.
+
+EMS helps entrepreneurs with the best, smartest and most efficient payment systems. Both 
+in your physical store and online in your webshop. With a wide range of payment methods 
+you can serve every customer.
+
+Why EMS?
+
+Via the EMS website you can create a free test account online 24/7 and try out the online 
+payment solution. EMS's online solution also offers the option of sending payment links and 
+accepting QR payments.
+
+The ideal online payment page for your webshop: 
+
+·         Free test account - apply online 24/7 
+
+·         Wide range of payment methods 
+
+·         Payment page entirely in the style of your website, making transactions less likely to be terminated. 
+
+·         Download your reports in the formats CAMT.053, MT940, MT940S & COD 
+
+·         One clear dashboard for all your payment, revenue and administrative functions 
+
+·         Available in 4 languages: English, French, Dutch, and German. More languages will be added. 
+
+
 ## Version number                 
  
 * Latest version VERSION_HERE
@@ -57,17 +84,11 @@ php bin/magento setup:static-content:deploy
 
 ## Additional ways to install ##
 
-### Installation by curl ###
-
-1. Go to app/code folder 
-2. Run command:
-```
-curl -s https://raw.githubusercontent.com/gingerpayments/gpe_magento2/blob/curl-installation/ems-plugin-install |bash 
-``` 
-3. Continue installation from step 4 in "Installation using Composer"
-
 ### Manual instalation ###
 
 1. Go to app/code folder 
-2. Unzip ems-online.zip file wich attached to release 
+2. Unzip ems-online.zip file wich attached to [release](https://github.com/emspay/ems-online-magento-2/releases) 
 3. Continue installation from step 4 in "Installation using Composer"
+
+
+
