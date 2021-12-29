@@ -74,7 +74,6 @@ composer require emspay/ems-online-magento-2
 ```
 php bin/magento setup:upgrade
 php bin/magento module:enable GingerPay_Payment
-
 ```
 If you install version 1.0.5 and older run:
 ```
