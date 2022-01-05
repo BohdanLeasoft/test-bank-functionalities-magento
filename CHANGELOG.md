@@ -12,7 +12,7 @@ Magento 2 2.0.0
 
 ## Changes in version 1.0.2
 + Added error message to admin when refunds are not possible
-+ Populate merchant_order_id with IncrementId instead of EntityId 
++ Populate merchant_order_id with IncrementId instead of EntityId
 + Date of birth and prefix are now added to Klarna request
 + Klarna Pay Later redirection
 
@@ -30,12 +30,13 @@ Magento 2 2.0.0
 
 * iDEAL issuer default value translation
 
-## Changes in version 1.1.0
+## Changes in version 2.0.0
 
 * Refactored code to handle GPE solution.
 * Unified bank labels to handle GPE solution.
-* Added the Google-pay, Sofort, Klarna DD payment methods
-* Added Multi-Currency solution
+* Added the Google-pay, Sofort, Klarna DD payment methods.
+* Added Multi-Currency solution.
+* Added ApplePay detection.
 * Added function which adaptively returns a message using 'customer_message'.
 * Added test which check is project structure correct using PHPUnit extension to check GPE solution on step GitHub actions.
 * Added test which check order creating using PHPUnit extension to check that latest changes doesn't crash the main functionality.

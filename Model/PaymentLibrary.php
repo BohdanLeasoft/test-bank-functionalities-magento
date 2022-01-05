@@ -420,7 +420,7 @@ class PaymentLibrary extends AbstractMethod
             throw new LocalizedException($errorMsg);
         }
         if (in_array($gingerOrder['status'], ['error', 'cancelled', 'expired'])) {
-            $reason = current($gingerOrder['transactions'])['customer_message'] ?? 'Refund order is not completed';
+            $reason = current($gingerOrder['transactions'])['customer_message'] ?? __('Refund is not completed.');
             $errorMsg = __('Error: not possible to create an online refund: %1', $reason);
             $this->configRepository->addTolog('error', $errorMsg);
             throw new LocalizedException($errorMsg);

@@ -2,6 +2,8 @@
 
 namespace GingerPay\Payment\Model\Builders;
 
+use Braintree\Exception;
+
 if (file_exists(__DIR__ ."/../../Library/vendor/autoload.php"))
 {
     require_once __DIR__ ."/../../Library/vendor/autoload.php";
@@ -93,7 +95,17 @@ class ApiBuilder
 
         $gingerClient = new \Ginger\Ginger;
 
-        $this->client = $gingerClient->createClient($this->endpoint, $this->apiKey);
+
+        try{
+            $this->client = $gingerClient->createClient($this->endpoint, $this->apiKey);
+        }
+        catch(Exception $e)
+        {
+            if ($e instanceof HttpException && $e->getStatusCode()== 401)
+            {
+                dd('you are not authorized');
+            }
+        }
 
         return $this->client;
     }
