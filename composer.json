@@ -1,5 +1,5 @@
 {
-    "name": "gingerpay/payment",
+    "name": "ginger-pay/payment",
     "description": "Ginger Pay for Magento 2",
     "type": "magento2-module",
     "version": "2.0.0",
