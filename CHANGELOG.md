@@ -1,6 +1,6 @@
-Magento 2 2.0.01
+Magento 2 2.0.1
 ------------------------------   
-
+ 
 # Changelog #
 
 ## Changes in version 1.0.0
