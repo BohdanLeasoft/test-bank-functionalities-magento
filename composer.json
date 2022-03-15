@@ -1,6 +1,6 @@
 {
     "name": "ginger-pay2/payment",
-    "description": "Ginger Pay for Magento 2",
+    "description": "Ginger Pay for Magento 2", 
     "type": "magento2-module",
     "version": "2.0.10",
      "require": {       
