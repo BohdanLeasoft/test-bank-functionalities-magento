@@ -32,7 +32,6 @@ define(
             {type: 'ginger_methods_afterpay', component: afterpayComponent},
             {type: 'ginger_methods_ideal', component: idealComponent},
             {type: 'ginger_methods_googlepay', component: defaultComponent},
-            {type: 'ginger_methods_klarnadirectdebit', component: defaultComponent}
         ];
         $.each(methods, function (k, method) {
             var paymentMethod = window.checkoutConfig.payment[method['type']];

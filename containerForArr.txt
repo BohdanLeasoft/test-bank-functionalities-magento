@@ -1,2 +1,0 @@
-methodsjs_arr=('ginger_methods_sofort' 'ginger_methods_tikkie')
-methods_arr=('sofort.xml' 'tikkie.xml')
